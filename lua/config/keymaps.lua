@@ -15,3 +15,6 @@ function Map(mode, lhs, rhs, opts)
 end
 
 Map("n", "<leader>bs", ":w<CR>", { desc = "Save buffer content to file" })
+Map("v", "d", '"_d', { desc = "Delete selection without buffer copy" })
+Map("v", "<Tab>", ">gv", { desc = "Indent selection to the right" })
+Map("v", "<S-Tab>", "<gv", { desc = "De-indent selection to the left" })
